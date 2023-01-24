@@ -84,11 +84,9 @@ Derivation of Heuns or improved method can be found [Here](https://en.wikipedia.
 
 <br><br>
 
-![Modified euler's method](https://personal.math.ubc.ca/~israel/m215/impeuler/img10.png)
+![Modified euler's method](http://fab.cba.mit.edu/classes/864.11/people/rachelle.villalon/pset4/8.1equations2.jpg)
 
-<br>
 
-![Modified euler's method](https://personal.math.ubc.ca/~israel/m215/impeuler/img12.png)
 
 
 
