@@ -128,5 +128,5 @@ dmypy.json
 # Pyre type checker
 .pyre/
 
-/favour.docx
-/ASS1.docx
+favour.docx
+ASS1.docx
