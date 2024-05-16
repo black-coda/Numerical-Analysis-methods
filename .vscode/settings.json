@@ -5,5 +5,6 @@
         "heuns",
         "kuttas",
         "runge"
-    ]
+    ],
+    "editor.fontFamily": "\"jetbrains mono\", 'Courier New', monospace"
 }

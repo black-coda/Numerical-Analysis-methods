@@ -10,6 +10,7 @@ def euler_method(func, init_value_x, init_value_y, h, N):
 
     while count != N:
         approximate_function = func(x=init_value_x, y=init_value_y)
+        print(approximate_function)
         approximate_value_y = init_value_y + h * approximate_function
         exact_value = mt.exp(init_value_x ** 3)
         absolute = abs(exact_value - approximate_value_y)

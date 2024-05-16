@@ -1,6 +1,6 @@
 import math as mt
 
-
+# Q = lambda x, y: 3 * (x ** 2) * y
 def euler_modified_method(func, init_value_y, init_value_x, h, N):
     count = 0
     while count != N:
@@ -14,7 +14,7 @@ def euler_modified_method(func, init_value_y, init_value_x, h, N):
 
         # print(next_value_of_yn)
         exact = mt.exp(init_value_x**3)
-        absolute = abs(exact - next_value_of_xn)
+        absolute = abs(exact - next_value_of_yn)
         rel = absolute / exact
 
         init_value_x = next_value_of_xn
@@ -27,9 +27,10 @@ def euler_modified_method(func, init_value_y, init_value_x, h, N):
         
         count += 1 
 
-Q = lambda x, y: 3 * (x ** 2) * y
-R = lambda x,y: x+(3*y)
 
-euler_modified_method(R, 1, 0, 0.1, 10)
+
+# R = lambda x,y: x+(3*y)
+Q = lambda x, y: 3 * (x ** 2) * y
+euler_modified_method(Q, 1, 0, 0.1, 10)
 
 
