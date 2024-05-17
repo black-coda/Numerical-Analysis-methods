@@ -6,5 +6,5 @@
         "kuttas",
         "runge"
     ],
-    "editor.fontFamily": "\"jetbrains mono\", 'Courier New', monospace"
+    "editor.fontFamily": "\"consolas\",\"jetbrains mono\", 'Courier New', monospace"
 }
