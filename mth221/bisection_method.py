@@ -31,13 +31,4 @@ def bisection_method(func, a, b, N=100):
     
     return (a + b) / 2
 
-# Example use-case
-import math as mt
 
-# Define the function for which we want to find the root
-def func(x):
-    return x - mt.cos(x)
-
-# Use the bisection method to find the root
-root = bisection_method(func, 0, 2)
-print(f"\nThe root of the function is approximately {root}\n")

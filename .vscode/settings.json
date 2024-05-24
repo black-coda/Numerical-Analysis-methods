@@ -4,6 +4,8 @@
         "Heun's",
         "heuns",
         "kuttas",
+        "raph",
+        "raphson",
         "runge"
     ],
     "editor.fontFamily": "\"consolas\",\"jetbrains mono\", 'Courier New', monospace"

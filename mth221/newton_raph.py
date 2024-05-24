@@ -1,4 +1,4 @@
-def newton_raphson(f, f_prime, x0, tol=1e-6, max_iter=100):
+def newton_raphson(f, f_prime, x0, tol=1e-6, N=100):
   """
   This function implements the Newton-Raphson method to find the root of a function.
 
@@ -13,15 +13,22 @@ def newton_raphson(f, f_prime, x0, tol=1e-6, max_iter=100):
       The approximation of the root or None if convergence is not achieved.
   """
 
-  for n in range(max_iter):
+  
+  count = 0
+
+  while count < N:
     fx = f(x0)
     fpx = f_prime(x0)
     if abs(fpx) < tol:
       raise RuntimeError("Derivative is zero, can't continue.")
-    x_new = x0 - fx / fpx
+    x_new = x0 - (fx / fpx)
     if abs(x_new - x0) < tol:
-      return x_new
+
+      return (x_new,count)
     x0 = x_new
+    count+=1
+
+  
 
   raise RuntimeError("Maximum iterations reached without convergence.")
 
