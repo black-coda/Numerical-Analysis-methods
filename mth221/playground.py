@@ -15,3 +15,6 @@ def func_prime(x):
 nr_root = newton_raphson(f=func, f_prime=func_prime, x0=1,N=10)
 print(f"\nThe root of the function is approximately {nr_root}\n")
 
+
+# This is the code playground
+
